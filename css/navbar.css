@@ -1,0 +1,306 @@
+.navbar {
+    /* position: fixed; */
+    top: 10px;
+    left: 0;
+    width: 60%;
+    background-color: rgb(80 47 123 / 89%);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.navbar .icon {
+    margin-right: auto; /* Empurra o ícone para a direita */
+}
+
+.navbar .logo {
+    margin-left: auto; /* Empurra a logo para a esquerda */
+}
+
+.navbar img{
+    height: 50px;
+    left: 0px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 25px 20px;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    color: rgb(255 153 72);
+    transition: 0.3s;
+}
+nav {
+    z-index: 1000;
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    top: 50px;
+    align-items: center;
+}
+.iconNav {
+    position: relative; 
+    display: inline-block;
+}
+
+.iconNav i {
+    color: rgb(2, 255, 0);
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.iconNav:hover::before {
+    content: ''; 
+    position: absolute;
+    cursor: pointer;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    background-color: rgba(0, 255, 0, 0.5); 
+    z-index: -1;
+    transition: transform 0.3s ease; 
+}
+
+.iconNav:hover i {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.iconNav:hover::before {
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+.linksNav br {
+    display: none;
+}
+.imgNav .btn{
+    display: flex;
+}
+
+
+
+#imagemobile{
+    display: none;
+}
+.uiverse {
+    position: relative;
+    /* background: #ffffff; */
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.uiverse1 {
+    position: relative;
+    /* background: #ffffff; */
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    background: rgb(255 153 72);
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: rgb(255 153 72);
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .uiverse:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  svg:hover span,
+  svg:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .uiverse:hover,
+  .uiverse:hover .tooltip,
+  .uiverse:hover .tooltip::before {
+     color: #ffffff;
+  }
+  .uiverse1:hover,
+  .uiverse1:hover .tooltip,
+  .uiverse1:hover .tooltip::before {
+     color: #ffffff;
+  }
+  .uiverse1:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+@media screen and (max-width: 1300px){
+    .navbar {
+        /* position: fixed; */
+        top: 20px;
+        backdrop-filter: blur(10px); /* Aplica um desfoque ao plano de fundo da navbar */
+        
+        border-radius: 50px;
+        left: 0;
+        width: 80%;
+      
+        padding: 10px 50px;
+        text-align: center;
+      
+        z-index: 1000;
+    }
+    .linksNav br {
+        display: none;
+    }
+    .imgNav .btn{
+        display: none;
+    }
+    #imagemobile{
+        display: flex;
+    }
+    .uiverse{
+        display: none;
+    }
+    .ggdigital{
+        display: flex;
+    }
+    .marginp {
+        width: 70px;
+    }
+}
+.ggdigital{
+    display: flex;
+}
+.marginp {
+    width: 70px;
+}
+
+@media screen and (max-width: 700px){
+    .navbar {
+        /* position: fixed; */
+        top: 20px;
+        backdrop-filter: blur(10px);
+       
+        border-radius: 50px;
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+       
+      
+        text-align: center;
+        z-index: 1000;
+    }
+    nav {
+        z-index: 1000;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        width: 100%;
+        top: 30px;
+        align-items: center;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 8px;
+        padding: 5px 2px;
+        transition: 0.3s;
+    }
+     .imgNav img{
+      height: 25px;
+      margin-top: 10px;
+    }
+    .imgNav .btn{
+        display: none;
+    }
+    .linksNav{
+        text-align: left;
+    }
+    .iconNav i {
+        color: rgb(2, 255, 0);
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .linksNav br {
+        display: flex;
+    }
+    .uiverse{
+        display: none;
+    }
+    .uiverse1 {
+        position: relative;
+        /* background: #ffffff; */
+        color: #000;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        width: 60px;
+        height: 50px;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+   
+}
