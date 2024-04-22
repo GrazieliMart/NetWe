@@ -320,21 +320,22 @@ html {
     color: #134371;
     transform: rotateY(180deg);
 }
+
 .whatsButton {
-  padding: 10px;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #13ff13;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  margin-top: -15px;
-  cursor: pointer;
-  outline: none;
-}
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #13ff13;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
   
   .whatsButton:hover {
     background-color: #23c483;
@@ -729,7 +730,9 @@ html {
       height: 100%;
             background-size: cover; /* Para que a imagem cubra toda a div */
         }
-  
+  .mobilecontact{
+    display: none;
+  }
   .background-image img{
     border-radius: 20px;
   }
@@ -771,8 +774,26 @@ html {
     justify-content: space-between; /* Alinha os elementos no espaço entre eles */
     align-items: center; /* Centraliza os elementos verticalmente */
 }
+#contato2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos no espaço entre eles */
+  align-items: center; /* Centraliza os elementos verticalmente */
+}
 .formcontato {
     flex-grow: 1; /* Ocupa todo o espaço disponível */
+}
+#contato1 {
+  position: relative;
+ 
+  overflow: hidden;
+}
+
+
+
+
+#contato1 .text-contentback {
+  z-index: 1; /* Garante que o texto fique sobre a imagem de fundo */
 }
 .formcontato {
     position: absolute;
@@ -819,6 +840,7 @@ html {
   margin-bottom: 30px;
   border: #481e79;
 }
+
     .square {
       
     
@@ -1060,9 +1082,6 @@ ul{
   margin-top: 100px;
   margin-right: 70px;
 }
-.mobilecontact{
-  display: none;
-}
 
 }
 @media screen and (max-width: 1300px){
@@ -1087,6 +1106,9 @@ ul{
 .content-box650 img {
   width: 90px;
   transform: translate3d(0px, 0px, 20px);
+}
+#contato1{
+  display: none;
 }
 .card1 {
   padding-top: 50px;
@@ -1131,12 +1153,12 @@ ul{
 #back {
   width: 100%;
   height: auto;
-  height: 300px;
+  height: 200px;
 }
 .iconssocial i {
   color: aliceblue;
   font-size: 30px;
-  margin-right: 40px;
+  margin-right: 20px;
   transition: 0.2s;
 }
 .text-contentback img {
@@ -1145,12 +1167,22 @@ ul{
 }
 .text-contentback {
   position: relative;
-  width: 300px;
+  width: 200px;
   z-index: 1;
   color: #fff;
-  margin-right: 25%;
-  margin-top: 5%;
+  margin-left: -10%;
+  margin-top: 10%;
   text-align: left;
+}
+.text-contentback h1{
+  margin-bottom: -10px;
+  font-size: 15px;
+  margin-top: 20px;
+ 
+}
+.text-contentback p{
+  font-size: 10px;
+   font-weight: 100;
 }
 .navbar a {
   color: white;
@@ -1248,10 +1280,11 @@ ul{
 #contato {
   position: relative;
   display: flex;
-  display: none;
+
   justify-content: space-between;
   align-items: center;
 }
+
 .footer-right .column {
   align-items: flex-start;
   padding: 10px;
@@ -1328,7 +1361,7 @@ transition: 0.2s;
 #icon-container {
   display: flex;
   padding: 0px;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
   padding-top: 30px;
   justify-content: center;
 }
@@ -1341,6 +1374,12 @@ transition: 0.2s;
   /* font-weight: 900; */
   text-align: center;
   margin: 0;
+}
+#contato1{
+  display: none;
+}
+#contato2{
+  display: none;
 }
 .precos {
   width: 100px;
@@ -1379,7 +1418,23 @@ transition: 0.2s;
   text-align: center;
 }
 .planos {
+  margin-top: 100px;
   padding: 20px;
+}
+.whatsButton {
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #13ff13;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 .titleback {
   font-size: 12px;
