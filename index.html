@@ -47,10 +47,88 @@
         </div>
         
 
+
+        <div class="buttons-container">
+              </div>
+        <div class="navbarmobile">
+          <img src="imgs/icon2.png" alt="Logo" class="logo">
+          <div class="menu-icon">
+              <i class="bi bi-list toggle-icon"></i>
+          </div>
+      </div>
+      
+      <div class="menu-container">
+        <div class="menu-header">
+            <div class="close-icon-container"> <!-- Novo container para o ícone de fechar -->
+                <div class="close-icon">
+                    <i class="bi bi-x-lg toggle-icon"></i>
+                </div>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <hr class="customhrmobile">
+            <li><a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed">CONTRATE </a></li>
+            <hr class="customhrmobile">
+            <li><a href="https://ixc.netwe.com.br/central_assinante_web/login">SUPORTE</a></li>
+            <hr class="customhrmobile">
+            <li><a href="https://ixc.netwe.com.br/central_assinante_web/login">ÁREA DO ASSINANTE</a></li>
+            <hr class="customhrmobile">
+            <li ><a href="contato.html">CONTATO</a></li>
+            <hr class="customhrmobile">
+            <li ><a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed"><i class="bi bi-whatsapp"> WhatsApp</i></a></li>
+        </ul>
+    </div>
+      
+      <div class="overlay"></div>
+      
+        <script>
+const toggleIcon = document.querySelector('.toggle-icon');
+const menuContainer = document.querySelector('.menu-container');
+
+// Função para abrir o menu
+function openMenu() {
+    menuContainer.classList.add('open');
+    toggleIcon.classList.remove('bi-list');
+    toggleIcon.classList.add('bi-x-lg');
+}
+
+// Função para fechar o menu
+function closeMenu() {
+    menuContainer.classList.remove('open');
+    toggleIcon.classList.remove('bi-x-lg');
+    toggleIcon.classList.add('bi-list');
+}
+
+// Inicialmente, o menu está fechado
+closeMenu();
+
+toggleIcon.addEventListener('click', function() {
+    // Verifica se o menu está aberto
+    if (!menuContainer.classList.contains('open')) {
+        // Se estiver fechado, abre o menu
+        openMenu();
+    } else {
+        // Se estiver aberto, fecha o menu
+        closeMenu();
+    }
+});
+
+// Adicionando evento de clique no ícone de fechar dentro do menu container
+const closeIcon = document.querySelector('.menu-container .close-icon');
+closeIcon.addEventListener('click', closeMenu);
+
+          </script>
+
+
+
+
         <div class="videointro">
            
             <video loop muted autoplay src="video/sitenetwe.webm"></video>
         </div>
+
+    
 
         <div class="planos">
   <div class="tittleH1">
@@ -63,6 +141,7 @@
             <div class="box">
                 
                 <div class="flip-card">
+                  <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="imgs/power.webp" alt=""  class="icons">
@@ -95,7 +174,7 @@
                             <button class="whatsButton"> QUERO
                             </button>
                     </div>
-                </div>
+                </div></a>
             </div>
         
         
@@ -103,6 +182,7 @@
             <div class="box">
         
                 <div class="flip-card">
+                  <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed">
                     <div class="flip-card-inner">
                         <div class="flip-card-front2">
                             <img src="imgs/net.png" alt=""  class="icons">
@@ -134,13 +214,15 @@
                             <button class="whatsButton"> QUERO
                             </button>
                         </div>
-                    </div>
+                    </div></a>
                 </div>
 
             </div>
+         <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed">
             <div class="box">
         
                 <div class="flip-card">
+               
                     <div class="flip-card-inner">
                         <div class="flip-card-front1">
                             <img src="imgs/house.png" alt="" class="icons">
@@ -176,7 +258,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div></a>
         </div>
         
         </div>
@@ -197,7 +279,7 @@
         <img src="imgs/fibra.png" alt="">
             <span>Fibra <br>Óptica</span>
           </div>
-          <div class="icon-item"id="nxplay">
+          <div class="icon-item">
               <img src="imgs/5g.png" alt="">
                   <span>Internet <br> 5G</span>
                 </div>
@@ -238,12 +320,13 @@
                 
                     <ul class="custom-list">
                       <li><h1>Sobre o Plano</h1></li>
-                      <li><b>650 Mega</b> para você estar On.</li>
-                      <li>Internet <b>5G de Velocidade</b>.</li>
-                      <li><b>Instalação Gratuita </b>na sua casa.</li>
-                      <li>Acesso a <b>NxPlay</b> para curtir Filmes e Séries.</li>
-                      <li><b>Fibra Óptica</b> de Qualidade.</li>
-                    </ul>
+                      <li><b><img src="imgs/+.png" alt="">   650 MEGA</b> </li>
+                      <li><img src="imgs/+.png" alt=""><b>   5G</b></li>
+                      <li><img src="imgs/+.png" alt=""><b>   Instalação Gratuita </b></li>
+                      <li><img src="imgs/+.png" alt=""><b>   Ultra Velocidade</b></li>
+                      <li><img src="imgs/+.png" alt=""><b>   NxPlay</b></li>
+                      <li><img src="imgs/+.png" alt=""><b>   Fibra Óptica</b></li>
+                       </ul>
                     <hr class="cardhr6501">
                 </div>
                 <div class="image-right">
@@ -264,9 +347,9 @@
                       <div class="content-box850">
                           <span class="card-title">850 MEGA</span>
                           <p class="card-content">PARA VOCÊ E TODA A FAMÍLIA!</p>
-                                <hr class="cardhr650">
+                                <hr class="cardhr850">
                                 <img src="imgs/nets (1).png" alt="">  
-                                 <hr class="cardhr650">
+                                 <hr class="cardhr850">
                        
                                 <img src="imgs/129.webp" alt="">
                              
@@ -283,12 +366,13 @@
               
                   <ul class="custom-list">
                     <li><h1>Sobre o Plano</h1></li>
-                    <li><b>850 Mega</b> para toda a família.</li>
-                    <li>Internet <b>5G de Velocidade</b>.</li>
-                    <li><b>Instalação Gratuita </b>na sua casa.</li>
-                    <li>Acesso a <b>NxPlay</b> para curtir Filmes e Séries.</li>
-                    <li><b>Fibra Óptica</b> de Qualidade.</li>
-                  </ul>
+                    <li><b><img src="imgs/+8.png" alt="">   850 MEGA</b> </li>
+                    <li><img src="imgs/+8.png" alt=""><b>   5G</b></li>
+                    <li><img src="imgs/+8.png" alt=""><b>   Instalação Gratuita </b></li>
+                    <li><img src="imgs/+8.png" alt=""><b>   Ultra Velocidade</b></li>
+                    <li><img src="imgs/+8.png" alt=""><b>   NxPlay</b></li>
+                    <li><img src="imgs/+8.png" alt=""><b>   Fibra Óptica</b></li>
+                     </ul>
                   <hr class="cardhr8501">
               </div>
               <div class="image-right">
@@ -300,7 +384,7 @@
 <br><br>
 
 
-<div class="outer-container">
+<div class="outer-container" >
   <div class="inner-container">
       <div class="image-left">
         <div class="parent">
@@ -327,13 +411,13 @@
       
           <ul class="custom-list">
             <li><h1>Sobre o Plano</h1></li>
-            <li><b>1 GIGA</b> para sua casa.</li>
-            <li>Internet <b>5G de Velocidade</b>.</li>
-            <li><b>Instalação Gratuita </b>na sua casa.</li>
-            <li><b>Canais Premium</b> para sua família.</li>
-            <li><b>Velocidade</b> de navegação.</li>
-            <li>Acesso a <b>NxPlay</b> para curtir Filmes e Séries.</li>
-            <li><b>Fibra Óptica</b> de Qualidade.</li>
+            <li><b><img src="imgs/+1.png" alt="">   1 GIGA</b> </li>
+            <li><img src="imgs/+1.png" alt=""><b>   5G</b></li>
+            <li><img src="imgs/+1.png" alt=""><b>   Instalação Gratuita </b></li>
+            <li><img src="imgs/+1.png" alt=""><b>   Canais Premium</b></li>
+            <li><img src="imgs/+1.png" alt=""><b>   Ultra Velocidade</b></li>
+            <li><img src="imgs/+1.png" alt=""><b>   NxPlay</b></li>
+            <li><img src="imgs/+1.png" alt=""><b>   Fibra Óptica</b></li>
           </ul>
           <hr class="cardhr6503">
       </div>
@@ -377,7 +461,7 @@
               <div class="textgames">
                 <h1>Jogue sem Lag!</h1>
                 <p>Internet com Super Velocidade de Qualidade e 5G <br> para você se superar em todas as partidas!</p>
-                <a href="#info">
+                <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed">
                     <button class="buttonvideo"> SABER MAIS
                    </button></a>
             </div>
@@ -393,7 +477,7 @@
             <div class="texttv">
                 <h1>Canais Premium!</h1>
                 <p> Com o plano de <b>1GIGA</b> receba canais Premium <br> como Discovery Kids, TLC e muito mais!</p>
-                <a href="#contato">
+                <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed">
                     <button class="buttonvideo"> SABER MAIS
                    </button></a>
             </div>
@@ -402,13 +486,13 @@
             </div>
             <div class="right-content">
                 <div class="gamesbutton"> 
-                    Jogue sem Lag 
+                    
                     <img src="imgs/btngame.png" alt=""></div>
                 <div class="netbutton"> 
-                    NxTv 
+                  
                     <img src="imgs/btncanais.png" alt=""></div>
                 <div class="tvbutton">
-                     Canais de Tv
+                   
                     <img src="imgs/btntv.png" alt="">
                </div>
         
@@ -416,7 +500,61 @@
           </div>
 
          </div>
+         <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const gamesButton = document.querySelector('.gamesbutton');
+            const netButton = document.querySelector('.netbutton');
+            const tvButton = document.querySelector('.tvbutton');
+            const video = document.querySelector('.video-frame video');
+            const textGames = document.querySelector('.textgames');
+            const textCanais = document.querySelector('.textcanais');
+            const textTv = document.querySelector('.texttv');
+        
+            // Função para trocar o vídeo e selecionar o botão correspondente
+            function selectButtonAndVideo(button, videoSrc, textDiv) {
+              const buttons = [gamesButton, netButton, tvButton];
+              buttons.forEach(btn => btn.classList.remove('selected'));
+              button.classList.add('selected');
+        
+              video.src = videoSrc;
+              video.play();
+        
+              // Exibir a div de texto correspondente
+              toggleTextDivs(textDiv);
+            }
+        
+            // Função para alternar a visibilidade das divs de texto
+            function toggleTextDivs(showDiv) {
+              const divs = [textGames, textCanais, textTv];
+              divs.forEach(div => {
+                if (div === showDiv) {
+                  div.style.display = 'block';
+                } else {
+                  div.style.display = 'none';
+                }
+              });
+            }
+        
+            // Definir vídeo de jogos como vídeo inicial ao carregar a página
+            selectButtonAndVideo(gamesButton, 'video/games.webm', textGames);
+        
+            // Adicionar eventos de clique aos botões
+            gamesButton.addEventListener('click', function() {
+              selectButtonAndVideo(gamesButton, 'video/games.webm', textGames);
+            });
+        
+            netButton.addEventListener('click', function() {
+              selectButtonAndVideo(netButton, 'video/canais.webm', textCanais);
+            });
+        
+            tvButton.addEventListener('click', function() {
+              selectButtonAndVideo(tvButton, 'video/tv.webm', textTv);
+            });
+          });
+        </script>
+        
           <script>
+            
        document.addEventListener("DOMContentLoaded", function() {
     const gamesButton = document.querySelector('.gamesbutton');
     const netButton = document.querySelector('.netbutton');
@@ -488,29 +626,14 @@
                   video.style.opacity = '1';
                 }, 500);
           
-                button.style.marginRight = '5px';
+              
               }
-          
-              // Adicionar eventos de clique aos botões
-              gamesButton.addEventListener('click', function() {
-                toggleTextDivs(textGames);
-                selectButtonAndVideo(gamesButton, 'video/games.webm');
-              });
-          
-              netButton.addEventListener('click', function() {
-                toggleTextDivs(textCanais);
-                selectButtonAndVideo(netButton, 'video/canaistv.webm');
-              });
-          
-              tvButton.addEventListener('click', function() {
-                toggleTextDivs(textTv);
-                selectButtonAndVideo(tvButton, 'video/tv.webm');
-              });
+      
             });
           </script>
           
           <script>
-      document.addEventListener("DOMContentLoaded", function() {
+     document.addEventListener("DOMContentLoaded", function() {
   const gamesButton = document.querySelector('.gamesbutton');
   const netButton = document.querySelector('.netbutton');
   const tvButton = document.querySelector('.tvbutton');
@@ -540,109 +663,37 @@
       video.style.transition = 'opacity 0.5s ease';
       video.style.opacity = '1';
     }, 500);
-    
-    button.style.marginRight = '5px';
   }
 
-  gamesButton.addEventListener('click', function() {
-    selectButtonAndVideo(gamesButton, 'video/games.webm');
-    gamesButton.style.transform = 'scale(1.2)';
-    netButton.style.transform = 'scale(0.8)';
-    tvButton.style.transform = 'scale(0.8)';
-  });
+
 
   netButton.addEventListener('click', function() {
-    selectButtonAndVideo(netButton, 'video/canaistv.webm');
-    gamesButton.style.transform = 'scale(0.8)';
-    netButton.style.transform = 'scale(1.2)';
-    tvButton.style.transform = 'scale(0.8)';
+    selectButtonAndVideo(netButton, 'video/canais.webm');
+   
   });
 
-  tvButton.addEventListener('click', function() {
-    selectButtonAndVideo(tvButton, 'video/tv.webm');
-    gamesButton.style.transform = 'scale(0.8)';
-    netButton.style.transform = 'scale(0.8)';
-    tvButton.style.transform = 'scale(1.2)';
-  });
+
 
   // Adicione eventos de clique às divs de texto para trocar os vídeos
   textGames.addEventListener('click', function() {
     selectButtonAndVideo(gamesButton, 'video/games.webm');
-    gamesButton.style.transform = 'scale(1.2)';
-    netButton.style.transform = 'scale(0.8)';
-    tvButton.style.transform = 'scale(0.8)';
+   
   });
 
-  textCanais.addEventListener('click', function() {
-    selectButtonAndVideo(netButton, 'video/canaistv.webm');
-    gamesButton.style.transform = 'scale(0.8)';
-    netButton.style.transform = 'scale(1.2)';
-    tvButton.style.transform = 'scale(0.8)';
-  });
+
 
   textTv.addEventListener('click', function() {
     selectButtonAndVideo(tvButton, 'video/tv.webm');
-    gamesButton.style.transform = 'scale(0.8)';
-    netButton.style.transform = 'scale(0.8)';
-    tvButton.style.transform = 'scale(1.2)';
+   
   });
 
-  gamesButton.addEventListener('mouseover', function() {
-    if (!gamesButton.classList.contains('selected')) {
-      gamesButton.style.transform = 'scale(1.1)';
-      gamesButton.style.marginRight = '-30px';
-    }
-    netButton.style.transform = 'scale(0.9)';
-    tvButton.style.transform = 'scale(0.9)';
-  });
-  gamesButton.addEventListener('mouseout', function() {
-    if (!gamesButton.classList.contains('selected')) {
-      gamesButton.style.transform = 'scale(1)';
-      gamesButton.style.marginRight = '-30px';
-    }
-    netButton.style.transform = 'scale(1)';
-    tvButton.style.transform = 'scale(1)';
-  });
 
-  netButton.addEventListener('mouseover', function() {
-    if (!netButton.classList.contains('selected')) {
-      netButton.style.transform = 'scale(1.1)';
-      netButton.style.marginRight = '-30px';
-    }
-    gamesButton.style.transform = 'scale(0.9)';
-    tvButton.style.transform = 'scale(0.9)';
-  });
-  netButton.addEventListener('mouseout', function() {
-    if (!netButton.classList.contains('selected')) {
-      netButton.style.transform = 'scale(1)';
-      netButton.style.marginRight = '-30px';
-    }
-    gamesButton.style.transform = 'scale(1)';
-    tvButton.style.transform = 'scale(1)';
-  });
-
-  tvButton.addEventListener('mouseover', function() {
-    if (!tvButton.classList.contains('selected')) {
-      tvButton.style.transform = 'scale(1.1)';
-      tvButton.style.marginRight = '-30px';
-    }
-    gamesButton.style.transform = 'scale(0.9)';
-    netButton.style.transform = 'scale(0.9)';
-  });
-  tvButton.addEventListener('mouseout', function() {
-    if (!tvButton.classList.contains('selected')) {
-      tvButton.style.transform = 'scale(1)';
-      tvButton.style.marginRight = '-30px';
-    }
-    gamesButton.style.transform = 'scale(1)';
-    netButton.style.transform = 'scale(1)';
-  });
 });
 
           </script>
 
 
-<div class="tittleH1" id="info">
+<div class="tittleH1" id="nxplay">
   <h1>Conheça a  <span> <br> NxPlay</span></h1>
   <hr id="customhr1">
    </div>
@@ -684,7 +735,7 @@
         <img src="imgs/nxplay (1).png" alt="">
         
           </div>
-          <div class="icon-item1"id="nxplay">
+          <div class="icon-item1">
               <img src="imgs/nxplay (4).png" alt="">
                 
                 </div>
@@ -793,7 +844,7 @@
 
         <div id="contato1">
           <div class="formcontato" >
-            <div></div>
+           
             <div class="imgback">
              
             </div>
@@ -819,49 +870,73 @@
         <footer>
             <div class="footer-content"> 
              
-                <div class="footer-left">
-          <div class="vertical-menu">
-            <img src="imgs/iconNetWe.webp" alt="Descrição da imagem">
-             <p>2024 NETWE ©     Todos os direitos reservados. <br>
-             NetWe Telecomunicaçoes LTDA - CNPJ: 41.631.371/0001-59</P>
-      </div>
-      </div>
+        
       <div class="footer-left">
           <div class="vertical-menu1">
-              <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed" >Contrate</a>
-              <a href="https://ixc.netwe.com.br/central_assinante_web/login" >Suporte</a>
-              <a href="https://ixc.netwe.com.br/central_assinante_web/login" >Área do Assinante</a>
-              <a href="contato.html" >Contato</a>
-          </div>
+             <img src="imgs/iconNetWe.webp" alt="">   </div>
       </div>
-                <div class="footer-right">
+                <div class="footer-right" id="canaisassinante">
                   
                     <div class="column">
-                        <div class="line"><i class="bi bi-telephone"></i>Vendas - (15) 99644-3744</div>
-                        <div class="line"><i class="bi bi-people"></i>Atendimento Assinante - (15) 3199-5000</div>
+                        <div class="line">Central de Vendas: <br> (15) 99644-3744</div><br>
+                        <div class="line">Atendimento Assinante: <br> (15) 3199-5000</div>
                      
-                        <div class="line2"> 
-                         <a href="https://www.facebook.com/netwe.br/"> <i class="bi bi-facebook"></i></a>
-                        <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed" id="whatsappIconFooter"> <i class="bi bi-whatsapp"></i></a>
-                         <a href="https://www.instagram.com/netwe.br/"> <i class="bi bi-instagram"></i></a>
-                        <a href="https://api.whatsapp.com/send/?phone=5515996443744&text&type=phone_number&app_absent=0"><i class="bi bi-telephone-outbound-fill"></i></a>
-                        </div>
+                       
                     </div>
+                    
                 </div>
+                <div class="footer-right" id="planosNetWe">
+                  
+                  <div class="column">
+                      <div class="line" id="bold">Planos NetWE</div><br>
+                     <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed"><div class="line">650 Mega</div></a>
+                     <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed"> <div class="line">850 Mega</div></a>
+                      <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed"><div class="line">1G Mega</div></a>
+                   
+                     
+                  </div>
+                  
+              </div>
+                
+                <div class="footer-right">
+                  
+                  <div class="column">
+                      <div class="line" id="bold">Central de Atendimento: <br><br> Avenida Plaza, 100, Chácara Primavera <br> Itu - SP <br> 13302-100
+
+                       </div>
+                     
+                   
+                     
+                  </div>
+                  
+                  
+              </div>
+                <div class="footer-left">
+                  <div class="vertical-menu1">
+                      <div class="social-icons">
+                          <a href="https://www.facebook.com/netwe.br/"><i class="bi bi-facebook"></i></a>
+                          <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed" id="whatsappIconFooter"><i class="bi bi-whatsapp"></i></a>
+                          <a href="https://www.instagram.com/netwe.br/"><i class="bi bi-instagram"></i></a>
+                                         </div>
+                  </div>
+              </div>
+               
+      
+              </div> 
+               <div class="vertical-menu"> 
                 <div class="ggdigital">
                 <p class="marginp">Feito por <span><strong><a>
                     <div class="uiverse1">
-                        <span class="tooltip2">
-                            <p class="marginp">GGDIGITAL</p>
-                        </span>
+                       
                         <span>
                             <a href="https://marketinggdigital.com/">
                             <img src="imgs/ggdigital.webp" alt=""></a>
                         </span>
                     </div>
                 </a></strong></span></p></div>
-      
-              </div>
+                 <p>2024 NETWE ©     Todos os direitos reservados. <br>
+             NetWe Telecomunicaçoes LTDA - CNPJ: 41.631.371/0001-59</P>
+      </div>
         </footer>
           
 

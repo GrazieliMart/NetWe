@@ -221,6 +221,9 @@ nav {
     .marginp {
         width: 70px;
     }
+    .navbarmobile{
+        display: none;
+    }
 }
 .ggdigital{
     display: flex;
@@ -228,61 +231,84 @@ nav {
 .marginp {
     width: 70px;
 }
-
-@media screen and (max-width: 700px){
+.navbarmobile{
+    display: none;
+}
+.menu-container{
+    display: none;
+}
+.buttons-container{
+    display: none;
+}
+@media screen and (max-width: 900px){
     .navbar {
-        /* position: fixed; */
-        top: 20px;
-        backdrop-filter: blur(10px);
-       
-        border-radius: 50px;
-        width: 100%;
-        margin-right: 20px;
-        margin-left: 20px;
-       
-      
-        text-align: center;
-        z-index: 1000;
+     display: none;
     }
-    nav {
-        z-index: 1000;
-        position: fixed;
-        justify-content: center;
+  
+    .navbarmobile {
+        background-color: #1d1b1b;
+        color: #fff;
         display: flex;
-        text-align: center;
-        width: 100%;
-        top: 30px;
+        z-index: 9999;
         align-items: center;
+        padding: 10px;
     }
-    .navbar a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 8px;
-        padding: 5px 2px;
-        transition: 0.3s;
+    
+    .navbarmobile .logo {
+        height: 50px;
+        margin-left: 20px;
+        margin-right: auto; /* Move a imagem para a extrema esquerda */
     }
-     .imgNav img{
-      height: 25px;
-      margin-top: 10px;
-    }
-    .imgNav .btn{
-        display: none;
-    }
-    .linksNav{
-        text-align: left;
-    }
-    .iconNav i {
-        color: rgb(2, 255, 0);
-        font-size: 25px;
+    
+    .navbarmobile .menu-icon {
         cursor: pointer;
-        transition: 0.3s;
+        padding: 3px;
+        border-radius: 5px;
+        margin-right: 20px;
+        background-color: #8638df;
     }
-    .linksNav br {
+    .menu-container .close-icon {
+        cursor: pointer;
+        padding: 3px;
+        font-size: 30px;
+        border-radius: 5px;
+        color: #fff;
+        /* margin-right: 20px; */
+        background-color: #8638df;
+    }
+    .menu-header {
         display: flex;
+        padding-top: 25px;
+        justify-content: flex-end;
     }
-    .uiverse{
-        display: none;
+    .close-icon-container {
+        margin-right: 20px; /* Adiciona margem à direita */
+    }
+    
+    .navbarmobile i{
+        font-size: 30px;
+        transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+
+    }
+    .menu-container {
+        position: fixed; /* Permanece acima de tudo na tela */
+     right: -250px; /* Inicia fora da tela à direita */
+        width: 250px; /* Largura do menu */
+        height: 100vh; /* Altura total da tela */
+        background-color: #fff; /* Cor de fundo do menu */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+        transition: right 0.5s ease, opacity 0.5s ease; /* Adiciona uma transição suave */
+        z-index: 9999; /* Coloca acima de tudo na tela */
+        opacity: 0; /* Inicia com opacidade 0 */
+        pointer-events: none; /* Para ignorar cliques quando invisível */
+        top: 0;
+        display: flow;
+    }
+    
+    .menu-container.open {
+        right: 0; /* Move o menu para a tela */
+        opacity: 1; /* Torna o menu visível */
+        pointer-events: auto; /* Restaura eventos de clique */
     }
     .uiverse1 {
         position: relative;
@@ -291,8 +317,8 @@ nav {
         padding: 0px;
         margin: 0px;
         border-radius: 10px;
-        width: 60px;
-        height: 50px;
+         width: 60px; 
+        height: 30px;
         font-size: 17px;
         display: flex;
         justify-content: center;
@@ -301,6 +327,62 @@ nav {
         /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
         cursor: pointer;
         transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      .ggdigital img {
+        width: 50px;
+        height: auto;
+      }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000070; /* Cor rosa com transparência */
+        z-index: 9998; /* Coloca abaixo do menu */
+        display: none; /* Inicialmente oculto */
     }
+    
+    .menu-container.open + .overlay {
+        display: block; /* Exibe o overlay quando o menu está aberto */
+    }
+    .menu{
+        font-weight: bold;
+    }
+    .menu i {
+        font-size: 25px;
+        /* margin-left: 10px; */
+        color: #25d366;
+    }
+    .menu .customhrmobile {
+        height: 2px;
+        background-color: #902fca5e;
+        width: 50%;
+        border: 1px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        margin-left: 0px;
+    }
+    .buttons-container {
+        display: flex;
+        padding: 5px;
+        margin-bottom: -2px;
+        background-color: #000000;
+    }
+    .buttons-container button {
+        color: #505050b3;
+      
+        font-size: 12px;
+        border-radius: 20px;
+        border: 2px solid #3d2a49;
+    }
+    
+    
+    
+    
+    
+      
+   
    
 }

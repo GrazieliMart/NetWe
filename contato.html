@@ -44,7 +44,78 @@
                 <i class="bi bi-whatsapp"></i>
             </a>
         </div>
+      
+        <div class="buttons-container">
+               </div>
+        <div class="navbarmobile">
+          <img src="imgs/icon2.png" alt="Logo" class="logo">
+          <div class="menu-icon">
+              <i class="bi bi-list toggle-icon"></i>
+          </div>
+      </div>
+      
+      <div class="menu-container">
+        <div class="menu-header">
+            <div class="close-icon-container"> <!-- Novo container para o ícone de fechar -->
+                <div class="close-icon">
+                    <i class="bi bi-x-lg toggle-icon"></i>
+                </div>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <hr class="customhrmobile">
+            <li><a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed">CONTRATE </a></li>
+            <hr class="customhrmobile">
+            <li><a href="https://ixc.netwe.com.br/central_assinante_web/login">SUPORTE</a></li>
+            <hr class="customhrmobile">
+            <li><a href="https://ixc.netwe.com.br/central_assinante_web/login">ÁREA DO ASSINANTE</a></li>
+            <hr class="customhrmobile">
+            <li ><a href="contato.html">CONTATO</a></li>
+            <hr class="customhrmobile">
+            <li ><a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed"><i class="bi bi-whatsapp"> WhatsApp</i></a></li>
+        </ul>
+    </div>
+      
+      <div class="overlay"></div>
+      
+        <script>
+const toggleIcon = document.querySelector('.toggle-icon');
+const menuContainer = document.querySelector('.menu-container');
 
+// Função para abrir o menu
+function openMenu() {
+    menuContainer.classList.add('open');
+    toggleIcon.classList.remove('bi-list');
+    toggleIcon.classList.add('bi-x-lg');
+}
+
+// Função para fechar o menu
+function closeMenu() {
+    menuContainer.classList.remove('open');
+    toggleIcon.classList.remove('bi-x-lg');
+    toggleIcon.classList.add('bi-list');
+}
+
+// Inicialmente, o menu está fechado
+closeMenu();
+
+toggleIcon.addEventListener('click', function() {
+    // Verifica se o menu está aberto
+    if (!menuContainer.classList.contains('open')) {
+        // Se estiver fechado, abre o menu
+        openMenu();
+    } else {
+        // Se estiver aberto, fecha o menu
+        closeMenu();
+    }
+});
+
+// Adicionando evento de clique no ícone de fechar dentro do menu container
+const closeIcon = document.querySelector('.menu-container .close-icon');
+closeIcon.addEventListener('click', closeMenu);
+
+          </script>
         <div class="planos" id="contatoo">
             <div class="tittleH1">
           <h1>ENTRE EM CONTATO PELO <span><br>WHATSAPP</span></h1>
@@ -111,7 +182,7 @@
       <a href="https://ixc.netwe.com.br/central_assinante_web/login">
       <div class="content">
           <p>Suporte</p>
-          <img src="imgs/suporte.png" alt="">
+          <img src="imgs/suporte.webp" alt="">
       </div></a>
   </div>
   
@@ -155,53 +226,79 @@
   
   
   
-          <footer>
-              <div class="footer-content"> 
-               
-                  <div class="footer-left">
-            <div class="vertical-menu">
-              <img src="imgs/iconNetWe.webp" alt="Descrição da imagem">
-               <p>2024 NETWE ©     Todos os direitos reservados. <br>
-               NetWe Telecomunicaçoes LTDA - CNPJ: 41.631.371/0001-59</P>
-        </div>
-        </div>
-        <div class="footer-left">
-            <div class="vertical-menu1">
-                <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed" >Contrate</a>
-                <a href="https://ixc.netwe.com.br/central_assinante_web/login" >Suporte</a>
-                <a href="https://ixc.netwe.com.br/central_assinante_web/login" >Área do Assinante</a>
-                <a href="contato.html" >Contato</a>
-            </div>
-        </div>
-                  <div class="footer-right">
-                    
-                      <div class="column">
-                          <div class="line"><i class="bi bi-telephone"></i>Vendas - (15) 99644-3744</div>
-                          <div class="line"><i class="bi bi-people"></i>Atendimento Assinante - (15) 3199-5000</div>
-                       
-                          <div class="line2"> 
-                           <a href="https://www.facebook.com/netwe.br/"> <i class="bi bi-facebook"></i></a>
-                          <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed" id="whatsappIconFooter"> <i class="bi bi-whatsapp"></i></a>
-                           <a href="https://www.instagram.com/netwe.br/"> <i class="bi bi-instagram"></i></a>
-                          <a href="https://api.whatsapp.com/send/?phone=5515996443744&text&type=phone_number&app_absent=0"><i class="bi bi-telephone-outbound-fill"></i></a>
-                          </div>
-                      </div>
+        <footer>
+          <div class="footer-content"> 
+           
+      
+    <div class="footer-left">
+        <div class="vertical-menu1">
+           <img src="imgs/iconNetWe.webp" alt="">   </div>
+    </div>
+              <div class="footer-right" id="canaisassinante">
+                
+                  <div class="column">
+                      <div class="line">Central de Vendas: <br> (15) 99644-3744</div><br>
+                      <div class="line">Atendimento Assinante: <br> (15) 3199-5000</div>
+                   
+                     
                   </div>
-                  <div class="ggdigital">
-                  <p class="marginp">Feito por <span><strong><a>
-                      <div class="uiverse1">
-                          <span class="tooltip2">
-                              <p class="marginp">GGDIGITAL</p>
-                          </span>
-                          <span>
-                              <a href="https://marketinggdigital.com/">
-                              <img src="imgs/ggdigital.webp" alt=""></a>
-                          </span>
-                      </div>
-                  </a></strong></span></p></div>
-        
+                  
+              </div>
+              <div class="footer-right" id="planosNetWe">
+                
+                <div class="column">
+                    <div class="line" id="bold">Planos NetWE</div><br>
+                   <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed"><div class="line">650 Mega</div></a>
+                   <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed"> <div class="line">850 Mega</div></a>
+                    <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed"><div class="line">1G Mega</div></a>
+                 
+                   
                 </div>
-          </footer>
+                
+            </div>
+              
+              <div class="footer-right">
+                
+                <div class="column">
+                    <div class="line" id="bold">Central de Atendimento: <br><br> Avenida Plaza, 100, Chácara Primavera <br> Itu - SP <br> 13302-100
+
+                     </div>
+                   
+                 
+                   
+                </div>
+                
+                
+            </div>
+              <div class="footer-left">
+                <div class="vertical-menu1">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/netwe.br/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://s.tintim.app/whatsapp/354d50eb-b569-4c20-9bf5-890a7a6b7161/ac6b7f67-5b4f-4df0-b3bc-ae0668eb64ed" id="whatsappIconFooter"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/netwe.br/"><i class="bi bi-instagram"></i></a>
+                                       </div>
+                </div>
+            </div>
+             
+    
+            </div> 
+             <div class="vertical-menu"> 
+              <div class="ggdigital">
+              <p class="marginp">Feito por <span><strong><a>
+                  <div class="uiverse1">
+                     
+                      <span>
+                          <a href="https://marketinggdigital.com/">
+                          <img src="imgs/ggdigital.webp" alt=""></a>
+                      </span>
+                  </div>
+              </a></strong></span></p></div>
+               <p>2024 NETWE ©     Todos os direitos reservados. <br>
+           NetWe Telecomunicaçoes LTDA - CNPJ: 41.631.371/0001-59</P>
+    </div>
+      </footer>
+        
+
             
 </body>
 </html>
