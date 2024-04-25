@@ -1488,6 +1488,9 @@ transition: 0.2s;
   justify-content: center;
   align-items: center;
 }
+a{
+  text-decoration: none;
+}
 .vertical-menu {
   padding: 10px;
   display: flex;
@@ -1498,7 +1501,8 @@ transition: 0.2s;
   align-items: center;
 }
 .footer-left {
-  display: ruby;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .footer-right {
