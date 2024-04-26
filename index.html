@@ -127,24 +127,6 @@ closeIcon.addEventListener('click', closeMenu);
       <!-- Adicione outras tags <source> aqui, se necessário, para diferentes formatos de vídeo -->
   </video>
 </div>
-<div class="videointro">
-  <video id="meuVideo" loop muted playsinline>
-      Seu navegador não suporta o elemento de vídeo.
-  </video>
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      var video = document.getElementById('meuVideo');
-      var source = document.createElement('source');
-      source.setAttribute('src', 'video/disp.mp4');
-      source.setAttribute('type', 'video/mp4');
-      video.appendChild(source);
-      video.play().catch(function(error) {
-          console.log('Reprodução automática não foi permitida:', error);
-          // Aqui você pode mostrar uma mensagem ao usuário sobre a reprodução automática
-      });
-  });
-</script>
 
 
 <script>
