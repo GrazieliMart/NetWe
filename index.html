@@ -120,7 +120,13 @@ closeIcon.addEventListener('click', closeMenu);
 
           </script>
 
-
+<div class="videointro">
+  <video autoplay loop muted playsinline preload="auto">
+    <source src="video/siteNetWe.mp4" type="video/mp4">
+      <source src="video/sitenetwe.webm" type="video/webm">
+      <!-- Adicione outras tags <source> aqui, se necessário, para diferentes formatos de vídeo -->
+  </video>
+</div>
 <div class="videointro">
   <video id="meuVideo" loop muted playsinline>
       Seu navegador não suporta o elemento de vídeo.
@@ -130,7 +136,7 @@ closeIcon.addEventListener('click', closeMenu);
   document.addEventListener('DOMContentLoaded', function() {
       var video = document.getElementById('meuVideo');
       var source = document.createElement('source');
-      source.setAttribute('src', 'video/siteNetWE.mp4');
+      source.setAttribute('src', 'video/disp.mp4');
       source.setAttribute('type', 'video/mp4');
       video.appendChild(source);
       video.play().catch(function(error) {
