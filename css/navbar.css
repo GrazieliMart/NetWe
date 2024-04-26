@@ -2,17 +2,27 @@
     /* position: fixed; */
     top: 10px;
     left: 0;
-    width: 60%;
-    background-color: rgb(80 47 123 / 89%);
-    padding: 10px 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.89);
+    padding: 30px 50px;
     display: flex;
-    justify-content: space-between;
-    border-radius: 50px;
+    justify-content: center;
+   
     align-items: center;
     z-index: 1000;
     backdrop-filter: blur(10px);
 }
-
+.telefone {
+    position: absolute;
+    top: 20px;
+    background-color: #fe8c2d;
+    right: 0;
+    border-bottom-left-radius: 25px;
+    padding: 20px;
+    color: #ffff;
+    border-top-left-radius: 25px;
+    z-index: 9999;
+}
 .navbar .icon {
     margin-right: auto; /* Empurra o ícone para a direita */
 }
@@ -25,26 +35,49 @@
     height: 50px;
     left: 0px;
 }
+.topnav{
+    padding: 7px;
+    background-color: #481e79;
+}
+.topnav button{
+   margin-left: 50px;
+   border-radius: 20px;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   padding-left: 5px;
+   border: 2px solid #fff;
+color: #726b6b;
+transition: 0.3s;
+}
+.topnav button:hover{
+    color: #fff;
+    background-color: #481e79;
+    transition: 0.3s;
+    cursor: pointer;
+    border: solid 2px #481e79;
+}
 .navbar a {
-    color: white;
+    color: #726b6b;
     text-decoration: none;
-    font-weight: bold;
     font-size: 14px;
     padding: 25px 20px;
     transition: 0.3s;
 }
 .navbar a:hover {
-    color: rgb(255 153 72);
+    color: #481e79;
     transition: 0.3s;
+}
+.dicbuttonnav{
+    background-color: #000;
 }
 nav {
     z-index: 1000;
-    position: fixed;
+  
     justify-content: center;
     display: flex;
     text-align: center;
     width: 100%;
-    top: 50px;
+  
     align-items: center;
 }
 .iconNav {
@@ -194,11 +227,11 @@ nav {
         top: 20px;
         backdrop-filter: blur(10px); /* Aplica um desfoque ao plano de fundo da navbar */
         
-        border-radius: 50px;
-        left: 0;
-        width: 80%;
       
-        padding: 10px 50px;
+        left: 0;
+        width: 100%;
+      
+        padding: 30px 50px;
         text-align: center;
       
         z-index: 1000;
@@ -244,7 +277,12 @@ nav {
     .navbar {
      display: none;
     }
-  
+  .telefone{
+    display: none;
+  }
+  .topnav{
+    display: none;
+  }
     .navbarmobile {
         background-color: #1d1b1b;
         color: #fff;
