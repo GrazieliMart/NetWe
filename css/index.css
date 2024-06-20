@@ -115,11 +115,8 @@ html {
 }
 
 .planos {
-  margin-top: 7px;
-  background-color: #f3e8ff;
-  padding-left: 100px;
-  padding-bottom: 200px;
-  padding-right: 100px;
+  margin-top: -70px;
+  padding: 100px;
 }
 
 .zoom {
@@ -1192,105 +1189,8 @@ ul {
   .assinante {
     display: flex;
     justify-content: center;
-  }
 
-  .promocao {
-    margin: -4px;
-
-    justify-content: center;
-  }
-
-  .promocao img {
-    width: 100%;
-  }
-
-  .promo {
-    padding: 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 25px;
-    background-color: #23c483;
-    border: none;
-    color: #fff;
-  }
-
-  .promo:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.2s;
-    background-color: #25d366;
-  }
-
-  .planos #logonetwe {
-    height: 120px;
-    padding-top: 50px;
-  }
-
-  .planos {
-    justify-content: center;
-  }
-
-  .iconpromo {
-    justify-content: center;
-    display: flex;
-  }
-
-}
-
-@media screen and (max-width: 1499px) {
-  .videointro video {
-    width: 100%;
-
-    overflow-x: hidden;
-  }
-
-  .promocao {
-    margin: -4px;
-
-    justify-content: center;
-  }
-
-  .promocao img {
-    width: 100%;
-  }
-
-  .promo {
-    padding: 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 25px;
-    background-color: #23c483;
-    border: none;
-    color: #fff;
-    margin-bottom: 50px;
-  }
-
-  .promo:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.2s;
-    background-color: #25d366;
-  }
-
-  .planos #logonetwe {
-    height: 120px;
-    padding-top: 50px;
-  }
-
-  .planos {
-    justify-content: center;
-  }
-
-  .iconpromo {
-    justify-content: center;
-    display: flex;
-  }
-
-  .tittleH1 {
-    text-align: center;
-    padding: 0px;
-    color: #481e79;
-    font-weight: bold;
+    align-items: center;
   }
 
   .interna {
@@ -1678,162 +1578,14 @@ ul {
     height: 200px;
   }
 
-  .iconsbox1 i {
-
+  .iconsbox2 i {
+    color: #ff7100;
     margin-right: 2px;
     margin-left: 2px;
     font-size: 10px;
   }
 
-  .iconsbox i {
-
-    margin-right: 2px;
-    margin-left: 2px;
-    font-size: 10px;
-  }
-
-  .tittleH1 p {
-    font-size: 16px;
-  }
-
-  .promocao img {
-    width: 100%;
-  }
-
-  .promocao {
-    margin: -4px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .promo {
-    padding: 15px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: #23c483;
-    border: none;
-    color: #fff;
-  }
-
-  .contratepromo {
-    padding: 30px;
-  }
-
-  .promo:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.2s;
-    background-color: #25d366;
-  }
-
-  .planos #logonetwe {
-    height: 120px;
-    padding-top: 50px;
-  }
-
-  .planos {
-    justify-content: center;
-  }
-
-  .iconpromo {
-    justify-content: center;
-    display: flex;
-  }
-
-  .video-frameplus video {
-    width: 320px;
-  }
-
-  .video-frameplus {
-    margin-right: 0px;
-    text-align: center;
-  }
-
-  .iconpromo {
-    display: none;
-  }
-
-  .planos {
-    margin-top: 0px;
-    padding: 20px;
-    margin-bottom: 0px;
-  }
-
-  .whatsButton {
-    padding: 10px;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #13ff13;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-  }
-
-  .titleback {
-    font-size: 11px;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-  }
-
-  .iconboximg img {
-    height: 18px;
-  }
-
-  .flip-card-front,
-  .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60px;
-    height: 180px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid #8638df;
-    border-radius: 1rem;
-    align-items: center;
-    font-size: 10px;
-    text-align: center;
-    padding: 15px;
-  }
-
-  .flip-card-front1,
-  .flip-card-back1 {
-    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60px;
-    height: 180px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid #134371;
-    border-radius: 1rem;
-    align-items: center;
-    text-align: center;
-    font-size: 10px;
-    padding: 15px;
-  }
-
-  .flip-card {
-    background-color: transparent;
-    width: 100px;
-    height: 254px;
-    perspective: 1000px;
-    font-family: sans-serif;
-  }
-
-  .container {
+  #contatoo {
 
     margin-bottom: 0px;
   }
