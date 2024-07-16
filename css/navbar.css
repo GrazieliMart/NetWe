@@ -1,19 +1,20 @@
 .navbar {
     /* position: fixed; */
-    top: 10px;
+    top: 30px;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.89);
     padding: 30px 50px;
     display: flex;
     justify-content: center;
-   
+    position: fixed;
+    box-shadow: 0px 0px 10px #0000005c;
     align-items: center;
-    z-index: 1000;
+    z-index: 998;
     backdrop-filter: blur(10px);
 }
 .telefone {
-    position: absolute;
+    position: fixed;
     top: 20px;
     background-color: #fe8c2d;
     right: 0;
@@ -22,6 +23,12 @@
     color: #ffff;
     border-top-left-radius: 25px;
     z-index: 9999;
+}
+.telefone:hover{
+    transition: 0.2s;
+    color: #ffffff;
+    background-color: #8638df;
+    cursor: pointer;
 }
 .navbar .icon {
     margin-right: auto; /* Empurra o ícone para a direita */
@@ -35,7 +42,10 @@
     height: 50px;
     left: 0px;
 }
-.topnav{
+.topnav {
+    POSITION: FIXED;
+    Z-INDEX: 999;
+    WIDTH: 100%;
     padding: 7px;
     background-color: #481e79;
 }
